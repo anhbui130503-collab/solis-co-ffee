@@ -24,5 +24,5 @@ Dự án dùng **Next.js 16.2.10** (App Router) — mới hơn dữ liệu huấ
 - Màu brand không định nghĩa trong `tailwind.config` mà khai báo làm CSS variable ở [`src/app/globals.css`](src/app/globals.css) (`--color-solis-*`), rồi map lại qua `@theme inline` để Tailwind sinh class tương ứng (`bg-solis-brown`, `text-solis-ink`, ...). Sửa màu thì sửa ở đây.
 - Font (`Playfair Display`, `Jost`) được load bằng `next/font/google` trong [`src/app/layout.tsx`](src/app/layout.tsx), expose qua CSS variable (`--font-playfair`, `--font-jost`), rồi gán vào `--font-serif`/`--font-sans` trong `globals.css`.
 - Animation reveal-on-scroll dùng chung 1 component [`src/components/Reveal.tsx`](src/components/Reveal.tsx) (wrapper `framer-motion` với `whileInView`) — bọc quanh nội dung section thay vì viết lại animation riêng ở từng chỗ.
-- `Logotype.tsx` là component wordmark "SOLIS" dùng ở Hero/Footer, có prop `showGap` điều khiển chi tiết nhận diện thương hiệu (xem `design-system.md`). `LogoMark.tsx` là icon "S" độc lập dùng riêng ở Nav.
+- `Logotype.tsx` là wordmark "SOLIS" dạng SVG (không dùng font) dùng ở Hero/Footer, vẽ lại từ file logo gốc (xem `design-system.md`). `LogoMark.tsx` là icon "S" độc lập dùng riêng ở Nav.
 - Import nội bộ dùng path alias `@/*` → `./src/*` (khai báo trong `tsconfig.json`), ví dụ `import Hero from "@/components/Hero"`.

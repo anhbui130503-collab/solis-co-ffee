@@ -13,10 +13,7 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <div className="flex flex-col items-center gap-3 text-center">
-            <Logotype
-              className="text-2xl text-solis-cream"
-              gapClassName="bg-solis-brown"
-            />
+            <Logotype className="text-2xl text-solis-cream" />
             <p className="tracked-sm text-[10px] uppercase text-solis-cream/60">
               Coffee &middot; Brunch &middot; Beer
             </p>

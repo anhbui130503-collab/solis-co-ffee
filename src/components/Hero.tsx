@@ -20,7 +20,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="tracked-sm absolute bottom-full left-1/2 mb-[0.9rem] -translate-x-1/2 whitespace-nowrap text-[0.825rem] uppercase text-solis-cream/90 sm:mb-[1.7rem] sm:text-[0.9625rem] md:mb-[2.2rem]"
+          className="tracked-sm absolute bottom-full left-1/2 mb-[1.55rem] -translate-x-1/2 whitespace-nowrap text-[0.825rem] uppercase text-solis-cream/90 sm:mb-[2.9rem] sm:text-[0.9625rem] md:mb-[3.7rem]"
         >
           Coffee <span className="mx-2 inline-block sm:mx-3">&middot;</span> Brunch{" "}
           <span className="mx-2 inline-block sm:mx-3">&middot;</span> Beer
@@ -31,10 +31,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
         >
-          <Logotype
-            className="text-7xl text-solis-cream sm:text-[8.5rem] md:text-[11rem]"
-            gapClassName="bg-solis-brown"
-          />
+          <Logotype className="text-7xl text-solis-cream sm:text-[8.5rem] md:text-[11rem]" />
         </motion.h1>
       </div>
 

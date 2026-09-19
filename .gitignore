@@ -18,3 +18,6 @@ scratch_ref
 
 # cấu hình cá nhân của Claude Code
 .claude/settings.local.json
+
+# thư mục Claude ghi file tạm ra
+Claude outputs
