@@ -1,12 +1,9 @@
 {
   // Solis site là static export (next.config.ts: output: "export").
-  // Cloudflare chỉ cần phục vụ thư mục out/ như file tĩnh — KHÔNG dùng
-  // adapter OpenNext, vì OpenNext đòi bản build dạng server (standalone)
-  // mà static export không tạo ra.
+  // Cloudflare Pages chỉ cần biết thư mục chứa file tĩnh sau khi build.
+  // Không dùng adapter OpenNext — nó đòi bản build dạng server mà static
+  // export không tạo ra.
   "name": "solis-coffee",
   "compatibility_date": "2026-09-19",
-  "assets": {
-    "directory": "./out",
-    "not_found_handling": "404-page"
-  }
+  "pages_build_output_dir": "./out"
 }
