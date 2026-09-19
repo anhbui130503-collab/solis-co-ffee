@@ -1,26 +1,39 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-solis-brown: #813130;
+  --color-solis-brown-dark: #672726;
+  --color-solis-cream: #eedbb1;
+  --color-solis-paper: #faf7f2;
+  --color-solis-ink: #2b2320;
+  --color-solis-ink-soft: #6b5c54;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-solis-brown: var(--color-solis-brown);
+  --color-solis-brown-dark: var(--color-solis-brown-dark);
+  --color-solis-cream: var(--color-solis-cream);
+  --color-solis-paper: var(--color-solis-paper);
+  --color-solis-ink: var(--color-solis-ink);
+  --color-solis-ink-soft: var(--color-solis-ink-soft);
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-jost);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-solis-paper);
+  color: var(--color-solis-ink);
+  font-family: var(--font-cormorant), serif;
+}
+
+.tracked {
+  letter-spacing: 0.25em;
+}
+
+.tracked-sm {
+  letter-spacing: 0.15em;
 }
